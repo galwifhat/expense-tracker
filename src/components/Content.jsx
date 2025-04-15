@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "./Form";
 import Search from "./Search";
+import Table from "./Table";
 
 const Content = () => {
   return (
@@ -8,8 +9,9 @@ const Content = () => {
       <div className="form">
         <Form />
       </div>
-      <div className= "search-button">
+      <div className="search-button">
         <Search />
+        <Table />
       </div>
     </main>
   );
