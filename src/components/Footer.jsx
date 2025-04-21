@@ -2,7 +2,7 @@ import React from "react";
 function Footer() {
   const today = new Date();
   return (
-    <footer>
+    <footer className="h-18 bg-[#60a5fa]">
       <p> Copyright &copy; {today.getFullYear()} </p>
     </footer>
   );
