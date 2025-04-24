@@ -8,6 +8,9 @@ const Content = () => {
   const [expenseData, setExpenseData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
+  // use effect
+  //fetch all data
+  //use prural for multiple data items
   // Receive new expense from Form component
   const handleAddExpense = (newExpense) => {
     setExpenseData((prev) => [...prev, newExpense]);
@@ -25,7 +28,7 @@ const Content = () => {
   });
 
   return (
-    <main className="flex w-full h-[400px]">
+    <main className="flex w-full min-h-[400px]">
       <div className="w-[30%]">
         <Form onAddExpense={handleAddExpense} />
       </div>

@@ -4,12 +4,12 @@ import React from "react";
 const table = ({ expensez }) => {
   console.log(expensez);
   return (
-    <div className="w-full">
+    <div className="w-full border">
       <table className="h-47 w-full bg-slate-100 border">
         <caption className="text-lg font-bold p-2 border bg-stone-100">
           My Expenses
         </caption>
-        <thead className="bg-amber-50 sticky top-0">
+        <thead className="bg-amber-50">
           <tr>
             {/* <th>&nbsp;</th>  */}
             <th scope="col">Expense</th>

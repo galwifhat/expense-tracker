@@ -11,16 +11,19 @@ const initialValues = {
 
 const Form = ({ onAddExpense }) => {
   const [expenseData, setExpenseData] = useState(initialValues);
-
+// change the name to single expense
   //on submit
   //create a new table row with expense, description, category, amount date
   // data is coiming from the input of the form
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onAddExpense(expenseData); //send to parent
+    //send to json server
+    //in response - addexx
+    onAddExpense(expenseData); //send to parent // being executed here
     setExpenseData(initialValues);
   };
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
